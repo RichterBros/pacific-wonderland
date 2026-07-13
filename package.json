@@ -1,0 +1,32 @@
+{
+  "name": "portland-antiques-mall",
+  "version": "1.0.0",
+  "description": "The Portland Antiques Mall website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@netlify/plugin-nextjs": "^5.15.10",
+    "next": "^15.5.15",
+    "nodemailer": "^6.9.13",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "@types/nodemailer": "^7.0.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.8.3"
+  }
+}

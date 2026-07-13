@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #dd183b;
+  --brand-red-dark: #cc1939;
+  --brand-dark: #140609;
+  --brand-cream: #ffede6;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: #222222;
+  background: #ffffff;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Simple entrance animation reused across sections */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
