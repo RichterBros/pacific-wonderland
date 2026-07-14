@@ -46,7 +46,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="bg-brand-dark text-white">
-          <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="max-w-none mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <h3 className="font-heading text-lg font-bold mb-3">
                 Pacific Wonderland Collectibles &amp; Antiques
@@ -97,7 +97,7 @@ export default function RootLayout({
           </div>
 
           <div className="border-t border-white/10">
-            <div className="max-w-6xl mx-auto px-4 py-5 text-center text-xs text-gray-400">
+            <div className="max-w-none mx-auto px-4 py-5 text-center text-xs text-gray-400">
               © {new Date().getFullYear()} Pacific Wonderland Collectibles &amp; Antiques. All rights reserved.
             </div>
           </div>

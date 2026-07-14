@@ -12,7 +12,7 @@ export default function Navigation({ links }: { links: NavLink[] }) {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       {/* Top bar */}
       <div className="bg-brand-dark text-white text-xs">
-        <div className="max-w-6xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+        <div className="max-w-none mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
           <span>
             Open Everyday · 10am – 6pm · 2417 SE Hawthorne, Portland, OR 97214
           </span>
@@ -26,17 +26,17 @@ export default function Navigation({ links }: { links: NavLink[] }) {
       </div>
 
       {/* Main nav */}
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between py-3">
+      <div className="max-w-none mx-auto px-4">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 py-3">
           <a href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo.png"
               alt="Pacific Wonderland Collectibles & Antiques logo"
-              width={100}
-              height={100}
+              width={200}
+              height={200}
               priority
             />
-            <span className="font-heading font-bold text-lg leading-tight text-brand-dark hidden sm:block">
+            <span className="font-heading font-bold text-4xl leading-tight text-brand-dark hidden sm:block">
               Pacific Wonderland
               <br />
               <span style={{ fontSize: "0.82em" }}>
@@ -46,7 +46,7 @@ export default function Navigation({ links }: { links: NavLink[] }) {
           </a>
 
           {/* Desktop links */}
-          <nav className="hidden lg:flex items-center gap-7 font-heading font-medium text-sm">
+          <nav className="hidden lg:flex flex-wrap items-center justify-end gap-x-7 gap-y-2 ml-auto font-heading font-medium text-[1.3125rem]">
             {links.map((link) => (
               <a
                 key={link.href}
@@ -58,7 +58,7 @@ export default function Navigation({ links }: { links: NavLink[] }) {
             ))}
             <a
               href="/vendor-application"
-              className="bg-brand-red hover:bg-brand-reddark text-white px-4 py-2 rounded-md transition-colors"
+              className="bg-brand-red hover:bg-brand-reddark text-white text-[1.640625rem] px-5 py-2.5 rounded-md transition-colors"
             >
               Become A Vendor
             </a>
@@ -66,7 +66,7 @@ export default function Navigation({ links }: { links: NavLink[] }) {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden text-brand-dark"
+            className="lg:hidden ml-auto text-brand-dark"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
             aria-expanded={open}
@@ -92,7 +92,7 @@ export default function Navigation({ links }: { links: NavLink[] }) {
       {/* Mobile menu */}
       {open && (
         <nav className="lg:hidden border-t border-gray-100 bg-white">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1 font-heading font-medium">
+          <div className="max-w-none mx-auto px-4 py-3 flex flex-col gap-1 font-heading font-medium">
             {links.map((link) => (
               <a
                 key={link.href}

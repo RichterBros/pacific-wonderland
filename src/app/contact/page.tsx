@@ -118,7 +118,7 @@ export default function ContactPage() {
     <div className="bg-white">
       {/* Header */}
       <div className="bg-brand-dark text-white py-16">
-        <div className="max-w-6xl mx-auto px-4 text-center">
+        <div className="max-w-none mx-auto px-4 text-center">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-3">Contact Us</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Questions about a piece, a booth, or a visit? Send us a note and
@@ -127,7 +127,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="max-w-none mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Info + map */}
         <div className="space-y-8">
           <div>

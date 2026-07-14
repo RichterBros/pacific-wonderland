@@ -42,7 +42,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-brand-dark/70" />
         </div>
-        <div className="relative max-w-6xl mx-auto px-4 py-28 md:py-36 text-center text-white fade-up">
+        <div className="relative max-w-none mx-auto px-4 py-28 md:py-36 text-center text-white fade-up">
           <p className="font-heading uppercase tracking-widest text-brand-cream text-sm mb-4">
             If you want it to last, shop in the past!
           </p>
@@ -90,7 +90,7 @@ export default function HomePage() {
 
       {/* Vendor recruitment */}
       <section className="bg-brand-cream py-20">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-none mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-4">
               Set up your space. Join a trusted team.
@@ -121,7 +121,7 @@ export default function HomePage() {
 
       {/* Categories */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-none mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark text-center mb-12">
             What You&apos;ll Find
           </h2>
@@ -162,7 +162,7 @@ export default function HomePage() {
 
       {/* Why choose us */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-none mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark text-center mb-12">
             Why Choose Us
           </h2>
@@ -179,7 +179,7 @@ export default function HomePage() {
 
       {/* Location / map */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-none mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-4">
               Come Visit
