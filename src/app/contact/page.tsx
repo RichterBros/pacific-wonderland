@@ -146,8 +146,8 @@ export default function ContactPage() {
               </p>
               <p>
                 <span className="font-semibold">Email:</span>{' '}
-                <a href="mailto:jwruecker@gmail.com" className="text-brand-red hover:underline">
-                  jwruecker@gmail.com
+                <a href="mailto:info@pacificwonderlandpdx.com" className="text-brand-red hover:underline">
+                  info@pacificwonderlandpdx.com
                 </a>
               </p>
               <p>

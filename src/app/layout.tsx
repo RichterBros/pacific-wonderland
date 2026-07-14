@@ -85,10 +85,10 @@ export default function RootLayout({
                 </p>
                 <p>
                   <a
-                    href="mailto:jwruecker@gmail.com"
+                    href="mailto:info@pacificwonderlandpdx.com"
                     className="hover:text-white transition-colors"
                   >
-                    jwruecker@gmail.com
+                    info@pacificwonderlandpdx.com
                   </a>
                 </p>
                 <p className="pt-2 font-semibold text-white">Open Everyday 10am – 6pm</p>
