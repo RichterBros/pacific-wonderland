@@ -77,7 +77,7 @@ export async function POST(request: Request): Promise<Response> {
 
     if (!host || !user || !pass || !from || !to) {
       return new Response(
-        JSON.stringify({ error: 'Email is not configured on the server yet. Please call us at (207) 874-8000.' }),
+        JSON.stringify({ error: 'Email is not configured on the server yet. Please call us at (503) 803-5177.' }),
         { status: 500 }
       )
     }

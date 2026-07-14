@@ -16,7 +16,7 @@ export default function GalleryPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {IMAGES.map((src) => (
           <div key={src} className="relative h-64 rounded-lg overflow-hidden shadow-md">
-            <Image src={src} alt="Antiques at The Portland Antiques Mall" fill className="object-cover" />
+            <Image src={src} alt="Antiques at Pacific Wonderland Collectibles & Antiques" fill className="object-cover" />
           </div>
         ))}
       </div>

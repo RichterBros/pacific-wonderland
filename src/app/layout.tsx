@@ -16,9 +16,9 @@ const karla = Karla({
 })
 
 export const metadata: Metadata = {
-  title: 'Antiques Shopping in Portland Maine | Portland Antiques Mall',
+  title: 'Antiques Shopping in Portland Oregon | Pacific Wonderland Collectibles & Antiques',
   description:
-    "Portland, Maine's largest antiques destination. Shop with 75+ quality antique dealers — furniture, vintage signs, curated clothing and more. Open every day 10am–5pm.",
+    "Portland, Oregon's largest antiques destination. Shop with 75+ quality antique dealers — furniture, vintage signs, curated clothing and more. Open every day 10am–6pm.",
 }
 
 const NAV_LINKS = [
@@ -49,10 +49,10 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
               <h3 className="font-heading text-lg font-bold mb-3">
-                The Portland Antiques Mall
+                Pacific Wonderland Collectibles &amp; Antiques
               </h3>
               <p className="text-sm text-gray-300 leading-relaxed">
-                Portland, Maine&apos;s largest antiques destination. Come shop
+                Portland, Oregon&apos;s largest antiques destination. Come shop
                 with our 75+ quality antique dealers where we have EVERYTHING,
                 for EVERYONE!
               </p>
@@ -77,28 +77,28 @@ export default function RootLayout({
             <div>
               <h3 className="font-heading text-lg font-bold mb-3">Visit Us</h3>
               <address className="not-italic text-sm text-gray-300 space-y-2">
-                <p>919 Congress St, Portland, ME 04102</p>
+                <p>2417 SE Hawthorne, Portland, OR 97214</p>
                 <p>
-                  <a href="tel:+12078748000" className="hover:text-white transition-colors">
-                    (207) 874-8000
+                  <a href="tel:+15038035177" className="hover:text-white transition-colors">
+                    (503) 803-5177
                   </a>
                 </p>
                 <p>
                   <a
-                    href="mailto:office@portlandantiquesmall.com"
+                    href="mailto:jwruecker@gmail.com"
                     className="hover:text-white transition-colors"
                   >
-                    office@portlandantiquesmall.com
+                    jwruecker@gmail.com
                   </a>
                 </p>
-                <p className="pt-2 font-semibold text-white">Open Everyday 10am – 5pm</p>
+                <p className="pt-2 font-semibold text-white">Open Everyday 10am – 6pm</p>
               </address>
             </div>
           </div>
 
           <div className="border-t border-white/10">
             <div className="max-w-6xl mx-auto px-4 py-5 text-center text-xs text-gray-400">
-              © {new Date().getFullYear()} The Portland Antiques Mall. All rights reserved.
+              © {new Date().getFullYear()} Pacific Wonderland Collectibles &amp; Antiques. All rights reserved.
             </div>
           </div>
         </footer>

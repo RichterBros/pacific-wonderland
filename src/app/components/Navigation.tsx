@@ -1,21 +1,26 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import Image from 'next/image'
+import React, { useState } from "react";
+import Image from "next/image";
 
-type NavLink = { href: string; label: string }
+type NavLink = { href: string; label: string };
 
 export default function Navigation({ links }: { links: NavLink[] }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       {/* Top bar */}
       <div className="bg-brand-dark text-white text-xs">
         <div className="max-w-6xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
-          <span>Open Everyday · 10am – 5pm · 919 Congress St, Portland, ME</span>
-          <a href="tel:+12078748000" className="font-semibold hover:text-brand-cream">
-            Call (207) 874-8000
+          <span>
+            Open Everyday · 10am – 6pm · 2417 SE Hawthorne, Portland, OR 97214
+          </span>
+          <a
+            href="tel:+15038035177"
+            className="font-semibold hover:text-brand-cream"
+          >
+            Call (503) 803-5177
           </a>
         </div>
       </div>
@@ -25,16 +30,18 @@ export default function Navigation({ links }: { links: NavLink[] }) {
         <div className="flex items-center justify-between py-3">
           <a href="/" className="flex items-center gap-3">
             <Image
-              src="/images/logo.webp"
-              alt="The Portland Antiques Mall logo"
-              width={54}
-              height={57}
+              src="/images/logo.png"
+              alt="Pacific Wonderland Collectibles & Antiques logo"
+              width={100}
+              height={100}
               priority
             />
             <span className="font-heading font-bold text-lg leading-tight text-brand-dark hidden sm:block">
-              The Portland
+              Pacific Wonderland
               <br />
-              Antiques Mall
+              <span style={{ fontSize: "0.82em" }}>
+                Collectibles &amp; Antiques
+              </span>
             </span>
           </a>
 
@@ -64,7 +71,14 @@ export default function Navigation({ links }: { links: NavLink[] }) {
             aria-label="Toggle menu"
             aria-expanded={open}
           >
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               {open ? (
                 <path d="M18 6 6 18M6 6l12 12" strokeLinecap="round" />
               ) : (
@@ -100,5 +114,5 @@ export default function Navigation({ links }: { links: NavLink[] }) {
         </nav>
       )}
     </header>
-  )
+  );
 }

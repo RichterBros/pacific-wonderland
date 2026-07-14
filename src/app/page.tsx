@@ -24,13 +24,7 @@ const WHY_US = [
   { title: 'Friendly, Knowledgeable Staff', text: 'Our team is happy to help you find exactly what you want.' },
   { title: 'Clean & Welcoming', text: 'A bright, organized space that makes browsing a pleasure.' },
   { title: 'Fresh Inventory', text: 'Our stock turns over constantly, so it always pays to come back.' },
-  { title: 'Prime Location', text: 'Right on Congress Street in the heart of Portland, Maine.' },
-]
-
-const LOCATIONS = [
-  { name: 'Fairfield Antiques Mall', city: 'Fairfield, ME', href: 'https://fairfieldantiquesmall.com/' },
-  { name: 'Portland Antiques Mall', city: 'Portland, ME', href: '/' },
-  { name: 'York Antiques Gallery', city: 'York, ME', href: '#' },
+  { title: 'Prime Location', text: 'Right on SE Hawthorne in the heart of Portland, Oregon.' },
 ]
 
 export default function HomePage() {
@@ -41,7 +35,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <Image
             src="/images/hero.webp"
-            alt="Inside the Portland Antiques Mall"
+            alt="Inside Pacific Wonderland Collectibles & Antiques"
             fill
             priority
             className="object-cover"
@@ -53,7 +47,7 @@ export default function HomePage() {
             If you want it to last, shop in the past!
           </p>
           <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Portland, Maine&apos;s Largest
+            Portland, Oregon&apos;s Largest
             <br className="hidden md:block" /> Antiques Destination
           </h1>
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
@@ -84,12 +78,12 @@ export default function HomePage() {
             About Us
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            The Portland Antiques Mall brings together dozens of independent
-            dealers in one welcoming space in the heart of Portland, Maine. Part
-            of the trusted Fairfield Antiques Mall family, we&apos;ve built a
-            destination where collectors, decorators, and first-time treasure
-            hunters can all find something special — from fine furniture and
-            vintage signage to jewelry, glassware, and one-of-a-kind curiosities.
+            Pacific Wonderland Collectibles &amp; Antiques brings together dozens of independent
+            dealers in one welcoming space in the heart of Portland, Oregon.
+            We&apos;ve built a destination where collectors, decorators, and
+            first-time treasure hunters can all find something special — from
+            fine furniture and vintage signage to jewelry, glassware, and
+            one-of-a-kind curiosities.
           </p>
         </div>
       </section>
@@ -109,7 +103,7 @@ export default function HomePage() {
             </p>
             <ul className="space-y-2 text-gray-700 mb-8">
               <li>• Flexible booth sizes to fit your inventory</li>
-              <li>• High-traffic Congress Street location</li>
+              <li>• High-traffic SE Hawthorne location</li>
               <li>• Supportive, experienced management</li>
             </ul>
             <a
@@ -183,27 +177,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Locations */}
-      <section className="bg-brand-cream py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark text-center mb-12">
-            Our Locations
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {LOCATIONS.map((loc) => (
-              <a
-                key={loc.name}
-                href={loc.href}
-                className="block bg-white rounded-lg shadow-md p-8 text-center hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-heading text-xl font-bold text-brand-dark mb-1">{loc.name}</h3>
-                <p className="text-gray-600">{loc.city}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Location / map */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
@@ -211,13 +184,13 @@ export default function HomePage() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-brand-dark mb-4">
               Come Visit
             </h2>
-            <p className="text-gray-700 mb-2">919 Congress St, Portland, ME 04102</p>
+            <p className="text-gray-700 mb-2">2417 SE Hawthorne, Portland, OR 97214</p>
             <p className="text-gray-700 mb-2">
-              <a href="tel:+12078748000" className="text-brand-red hover:underline">
-                (207) 874-8000
+              <a href="tel:+15038035177" className="text-brand-red hover:underline">
+                (503) 803-5177
               </a>
             </p>
-            <p className="text-gray-700 mb-6">Open Everyday · 10am – 5pm</p>
+            <p className="text-gray-700 mb-6">Open Everyday · 10am – 6pm</p>
             <a
               href="/contact"
               className="inline-block bg-brand-red hover:bg-brand-reddark text-white font-heading font-medium px-8 py-3 rounded-md transition-colors"
@@ -227,14 +200,14 @@ export default function HomePage() {
           </div>
           <div className="relative w-full h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps?q=919+Congress+St,+Portland,+ME+04102&hl=en&z=15&output=embed"
+              src="https://www.google.com/maps?q=2417+SE+Hawthorne,+Portland,+OR+97214&hl=en&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Map to 919 Congress St, Portland, ME"
+              title="Map to 2417 SE Hawthorne, Portland, OR"
             />
           </div>
         </div>

@@ -132,40 +132,40 @@ export default function ContactPage() {
         <div className="space-y-8">
           <div>
             <h2 className="font-heading text-2xl font-bold text-brand-dark mb-4">
-              The Portland Antiques Mall
+              Pacific Wonderland Collectibles &amp; Antiques
             </h2>
             <div className="space-y-2 text-gray-800">
               <p>
-                <span className="font-semibold">Address:</span> 919 Congress St, Portland, ME 04102
+                <span className="font-semibold">Address:</span> 2417 SE Hawthorne, Portland, OR 97214
               </p>
               <p>
                 <span className="font-semibold">Phone:</span>{' '}
-                <a href="tel:+12078748000" className="text-brand-red hover:underline">
-                  (207) 874-8000
+                <a href="tel:+15038035177" className="text-brand-red hover:underline">
+                  (503) 803-5177
                 </a>
               </p>
               <p>
                 <span className="font-semibold">Email:</span>{' '}
-                <a href="mailto:office@portlandantiquesmall.com" className="text-brand-red hover:underline">
-                  office@portlandantiquesmall.com
+                <a href="mailto:jwruecker@gmail.com" className="text-brand-red hover:underline">
+                  jwruecker@gmail.com
                 </a>
               </p>
               <p>
-                <span className="font-semibold">Hours:</span> Open Everyday, 10am – 5pm
+                <span className="font-semibold">Hours:</span> Open Everyday, 10am – 6pm
               </p>
             </div>
           </div>
 
           <div className="relative w-full h-72 rounded-lg overflow-hidden shadow">
             <iframe
-              src="https://www.google.com/maps?q=919+Congress+St,+Portland,+ME+04102&hl=en&z=15&output=embed"
+              src="https://www.google.com/maps?q=2417+SE+Hawthorne,+Portland,+OR+97214&hl=en&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Map to 919 Congress St, Portland, ME"
+              title="Map to 2417 SE Hawthorne, Portland, OR"
             />
           </div>
         </div>
